@@ -1,0 +1,14 @@
+.skills{
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		display: block;
+		box-shadow: 0 0 3px #111;
+		margin: 5px;
+		min-width: 5em;
+		padding: .5em;
+		background-color: #eee;
+		text-align: center;
+	}
+}

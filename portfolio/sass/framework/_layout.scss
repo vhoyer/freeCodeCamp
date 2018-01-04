@@ -1,0 +1,28 @@
+body{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	background-color: $bgcolor;
+	color: #222;
+	padding-bottom: 1em;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a,a:visited{
+	color: #0275d8;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		color: #025aa5;
+	}
+
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+ul{
+	padding-left: 1.2em;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "randomQuoteMachine",
+  "authors": [
+    "Vinícius Hoyer <vhoyer@live.com>"
+  ],
+  "description": "read docs/doc.md",
+  "main": "index.html",
+  "keywords": [
+    "freeCodeCamp",
+    "quotes"
+  ],
+  "license": "MIT",
+  "homepage": "vhoyer.github.io/randomQuoteMachine",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.100.2"
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "tributePage"]
+	path = tributePage
+	url = ./tributePage/
+[submodule "portfolio"]
+	path = portfolio
+	url = ./portfolio/

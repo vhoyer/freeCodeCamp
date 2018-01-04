@@ -1,0 +1,159 @@
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.panel-aside, .lead {
+  box-shadow: 0 0 3px #111;
+  background-color: #ddd; }
+
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+  color: #222;
+  padding-bottom: 1em; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+a, a:visited {
+  color: #0275d8;
+  text-decoration: none; }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #025aa5; }
+  a:hover, a:visited:hover {
+    text-decoration: underline; }
+
+ul {
+  padding-left: 1.2em; }
+
+.bold {
+  font-weight: bold; }
+
+@media screen and (min-width: 767px) {
+  .panel-aside + .content {
+    margin-left: 16em; } }
+
+/* MODULES - Re-usable site elements.
+========================================================================== */
+.panel-aside {
+  width: 100%;
+  padding: 1em 0 1; }
+  @media screen and (min-width: 767px) {
+    .panel-aside {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      width: 16em;
+      height: 100%; } }
+  .panel-aside .img-border {
+    border: 0.7em solid #c4c4c4;
+    border-radius: 50%; }
+  .panel-aside .img-profile {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 325px; }
+  .panel-aside h1 {
+    text-align: center; }
+
+#portfolio {
+  justify-content: space-between; }
+  @media screen and (min-width: 961px) {
+    #portfolio {
+      padding: 0 5%; } }
+  @media screen and (min-width: 961px) {
+    #portfolio .lead {
+      max-width: 49%;
+      margin-left: 0;
+      margin-right: 0; } }
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5em auto;
+  width: 80%; }
+  .social a {
+    transition: color ease-in .2s; }
+  .social #github:hover {
+    color: #000; }
+  .social #facebook:hover {
+    color: #3b5998; }
+  .social #twitter:hover {
+    color: #009eed; }
+  .social #instagram:hover {
+    color: #bc2a8d; }
+  .social #linkedin:hover {
+    color: #0077b5; }
+
+nav a {
+  cursor: pointer; }
+nav ol {
+  padding: 0;
+  list-style: none; }
+nav ol > li {
+  text-align: center; }
+nav hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent 20%, rgba(0, 0, 0, 0.3) 50%, transparent 80%); }
+
+.lead {
+  margin: 1em auto 0;
+  width: 90%;
+  padding: .05em 1em; }
+  .lead img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; }
+
+.flex, #portfolio {
+  display: flex;
+  flex-flow: row wrap; }
+
+.skills, .langs {
+  padding-left: 0;
+  list-style: none; }
+  .skills li, .langs li {
+    display: block;
+    box-shadow: 0 0 3px #111;
+    margin: 5px;
+    min-width: 5em;
+    padding: .5em;
+    background-color: #eee;
+    text-align: center; }
+
+@media screen and (min-width: 961px) {
+  .langs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .langs li {
+      width: 49%;
+      margin: 5px 0; } }
+.langs li {
+  margin-top: 10px; }
+.langs li > span {
+  display: block;
+  text-align: left; }
+.langs li > .progress, .langs li > .progress div {
+  border: none;
+  border-radius: 8px;
+  height: 2em; }
+.langs li > .progress {
+  box-shadow: inset 0 0 2px #111;
+  margin-top: .5em;
+  width: 100%;
+  background-color: #ddd; }
+  .langs li > .progress div {
+    background-color: #5cb85c; }
+  .langs li > .progress span {
+    position: relative;
+    top: -2em;
+    line-height: 2em; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,27 @@
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_placeholders.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
+
+@import 'framework/_layout.scss';
+@import 'framework/_classes.scss';
+
+
+/* MODULES - Re-usable site elements.
+========================================================================== */ 
+
+@import 'modules/_panel-aside.scss';
+@import 'modules/_portfolio.scss';
+@import 'modules/_social.scss';
+@import 'modules/_nav.scss';
+@import 'modules/_lead.scss';
+@import 'modules/_flex.scss';
+@import 'modules/_skills.scss';
+@import 'modules/_langs.scss';

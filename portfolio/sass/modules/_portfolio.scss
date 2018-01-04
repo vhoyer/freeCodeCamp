@@ -1,0 +1,16 @@
+#portfolio {
+	@extend .flex;
+	justify-content: space-between;
+
+	@media screen and (min-width: $lg){
+		padding: 0 5%;
+	}
+
+	.lead {
+		@media screen and (min-width: $lg){
+			max-width: 49%;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

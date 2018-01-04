@@ -1,0 +1,50 @@
+.langs{
+	@extend .skills;
+
+	@media screen and (min-width: $lg) {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+
+		li {
+			width: 49%;
+			margin: 5px 0;
+		}
+	}
+
+	li {
+		margin-top: 10px;
+	}
+
+	li > span {
+		display: block;
+		text-align: left;
+	}
+	
+	$progress-height: 2em;
+	%progress {
+		border: none;
+		border-radius: 8px;
+		height: $progress-height;
+	}
+
+	li > .progress {
+		@extend %progress;
+
+		box-shadow: inset 0 0 2px #111;
+		margin-top: .5em;
+		width: 100%;
+		background-color: #ddd;
+
+		div {
+			@extend %progress;
+			background-color: #5cb85c;
+		}
+
+		span {
+			position: relative;
+			top: -$progress-height;
+			line-height: $progress-height;
+		}
+	}
+}

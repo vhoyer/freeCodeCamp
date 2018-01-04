@@ -1,0 +1,39 @@
+body{
+	overflow-x: hidden;
+}
+.full-screen{
+	position: relative;
+	font-size: 2em;
+	width: 100vw;
+	height: 100vh;
+}
+.wrapper{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	padding: 6em 8em;
+	height: 100%;
+	width: 100%;
+	.author{
+		text-align: right;
+	}
+}
+.quotes{
+	position: absolute;
+	line-height: 1em;
+	overflow: hidden;
+	span{
+		display: block;
+	}
+}
+
+.quotes.big{
+	transform: translateY(2em) scale(10);
+	top: 5em;
+	left: 5em;
+}
+.quotes.end{
+	transform: translateY(2em) scale(6);
+	bottom: 5em;
+	right: 5em;
+}

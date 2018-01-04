@@ -1,0 +1,32 @@
+.panel-aside {
+	@extend %card;
+	width: 100%;
+	padding: 1em 0 1;
+
+	@media screen and (min-width: $md) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		width: $asidew;
+		height: 100%;
+	}
+
+	.img-border{
+		border: .7em solid darken($aside_bgcolor, 10%);
+		border-radius: 50%;
+	}
+
+	.img-profile {
+		display: block;
+		margin: 0 auto;
+		width: 70%;
+		max-width: 325px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+}

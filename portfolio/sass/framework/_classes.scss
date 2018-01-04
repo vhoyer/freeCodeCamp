@@ -1,0 +1,9 @@
+.bold {
+	font-weight: bold;
+}
+
+.panel-aside + .content {
+	@media screen and (min-width: $md){
+		margin-left: $asidew;
+	}
+}
